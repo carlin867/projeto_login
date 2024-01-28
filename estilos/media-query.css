@@ -30,7 +30,7 @@ Grandes Telas: acima de 1200px
     width: 70%;
   }
 }
-@media screen and (min-width: 993px) and (max-width:1200px) {
+@media screen and (min-width: 993px){
   body{
     background-image: linear-gradient(90deg, #5f2c82 , #49a09d);
   }
