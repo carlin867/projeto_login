@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela de Login</title>
-  <link rel="stylesheet" href="estilos/style.css">
-  <link rel="stylesheet" href="estilos/media-query.css">
-</head>
-<body>
-  <main>
-    <section id="login">
-      <div id="imagem">
-      </div>
-      <div id="formulario">
-        <h1>Login</h1>
-        <p>Seja Bem-Vindo(a) Novamente faça login para  continuar!</p>
-        <form action="" method="post">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-query.css" />
+  </head>
+  <body>
+    <main>
+      <section id="login">
+        <div id="imagem"></div>
+        <div id="formulario">
+          <h1>Login</h1>
+          <p>Seja Bem-Vindo(a) Novamente faça login para continuar!</p>
+          <form action="" method="post">
+            <div class="campo">
+              <label for="iusuario"><img src="imagem/usuario.png" alt="Usuario-foto"></label>
+              <input type="text" name="usuario" id="iusuario" autocomplete="email" required maxlength="40" placeholder="Usuário"/>
 
-          <label for="iusuario">Usuário:</label>
-          <input type="text" name="usuario" id="iusuario">
+            </div>
 
-          <label for="isenha">Senha:</label>
-          <input type="password" name="senha" id="isenha">
+            <div class="campo">
+              <label for="isenha"><img src="imagem/senha.png" alt="Senha-foto"></label>
+              <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" maxlength="20" placeholder="Senha"/>
 
-          <input type="submit" value="Entrar"><br>
-          
-          <button>Cadastre-se</button>
+            </div>
 
+            <input type="submit" value="Entrar" />
 
-        </form>
-      </div>
-    </section>
-  </main>
-  
-</body>
+            <a href="esqueci.html" class="botao">
+              Esqueci a Senha
+            </a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

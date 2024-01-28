@@ -18,6 +18,7 @@ Grandes Telas: acima de 1200px
   }
   #login {
     width: 90vw;
+    height: 280px;
   }
   #login #imagem{
     float: left;
@@ -46,6 +47,12 @@ Grandes Telas: acima de 1200px
   #login #formulario{
     float: right;
     width: 50%;
+  }
+  #formulario h1{
+    font-size: 2em;
+  }
+  #formulario p{
+    font-size: 1.2em;
   }
 }
 
