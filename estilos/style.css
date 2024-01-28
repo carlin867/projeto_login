@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* 
+    Paleta de Cores:
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+:root {
+  --cor1: #49a09d;
+  --cor2: #5f2c82;
+  --cor3: #60d3d0;
+  --cor4: #357572;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body,
+html {
+  background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  background-color: white;
+  width: 250px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.456);
+
+  transition: width 0.2s, height 0.2s;
+  transition-timing-function: ease;
+}
+#login #imagem {
+  background: var(--cor2) url(../imagem/cafe.jpg);
+  height: 200px;
+  background-size: cover;
+  display: block;
+}
+#login #formulario {
+  padding: 10px;
+  display: block;
+}
